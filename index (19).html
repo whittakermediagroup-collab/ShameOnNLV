@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>North Las Vegas Teamsters — Local 14</title>
+<meta name="description" content="590 Teamsters Local 14 members keep North Las Vegas running. It's time the city paid them fairly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="brand-bar" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wordmark">
+    <svg class="wordmark-seal" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+      <circle cx="18" cy="18" r="17" fill="none" stroke="#C9982A" stroke-width="2"/>
+      <path d="M18 9 L20.5 15.5 L27.5 15.9 L22 20.2 L24 27 L18 23 L12 27 L14 20.2 L8.5 15.9 L15.5 15.5 Z" fill="#C9982A"/>
+    </svg>
+    <div class="wordmark-text">
+      <span class="wordmark-local">Teamsters Local 14</span>
+      <span class="wordmark-unit">North Las Vegas Unit</span>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <a href="#gallery">Photos</a>
+    <a href="#record">The Record</a>
+    <a href="#voices">Voices</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#action">Take Action</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-kicker">City of North Las Vegas · Contract negotiation</p>
+        <h1 class="hero-headline">We're the backbone of this city. Lately we're the back seat.</h1>
+        <p class="hero-sub">590 Teamsters Local 14 members run the trucks, the water, the streets, and the yards that keep North Las Vegas open. When the city was nearly bankrupt, we helped hold it together. Now the city is thriving — and still won't put a fair raise on paper.</p>
+        <div class="hero-actions">
+          <a href="#action" class="btn btn-primary">Take action</a>
+          <a href="#record" class="btn btn-ghost">See the record</a>
+        </div>
+      </div>
+      <div class="hero-plate" aria-hidden="true">
+        <div class="plate">
+          <div class="plate-title">Contract fact sheet</div>
+          <div class="plate-row"><span>Unit</span><strong>NLV / Local 14</strong></div>
+          <div class="plate-row"><span>Members</span><strong id="stat-members">590</strong></div>
+          <div class="plate-row"><span>Last raise</span><strong>2.1%</strong></div>
+          <div class="plate-row"><span>Actual pay gain</span><strong>1.0%</strong></div>
+          <div class="plate-row plate-row--status"><span>Contract status</span><strong class="status-flag">Unsettled</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO SECTION -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-head">
+      <h2>On the routes. In the yards. Keeping NLV moving.</h2>
+      <p class="section-note">A different set of photos appears on every visit.</p>
+    </div>
+    <div class="photo-board" id="photoBoard"></div>
+  </section>
+
+  <!-- THE TOGGLE: bad times vs good times -->
+  <section class="toggle-section" id="record">
+    <div class="section-head">
+      <h2>When times are bad, we're family.<br>When times are good, we're put to the side.</h2>
+      <p class="section-note">This is how it's actually gone for NLV Teamsters over the last two decades.</p>
+    </div>
+
+    <div class="toggle-widget" id="toggleWidget">
+      <div class="toggle-switch" role="tablist" aria-label="Bad times or good times">
+        <button class="toggle-btn is-active" data-mode="bad" role="tab" aria-selected="true">When times are bad</button>
+        <button class="toggle-btn" data-mode="good" role="tab" aria-selected="false">When times are good</button>
+      </div>
+
+      <div class="toggle-stage">
+        <svg class="toggle-illustration" viewBox="0 0 640 180" aria-hidden="true">
+          <line x1="20" y1="128" x2="620" y2="128" class="position-track" stroke-width="2" stroke-dasharray="4 6"/>
+          <circle cx="150" cy="128" r="5" fill="rgba(11,31,61,0.3)"/>
+          <circle cx="480" cy="128" r="5" fill="rgba(11,31,61,0.3)"/>
+
+          <g class="target-marker target-head">
+            <text x="0" y="0" class="target-label">HEAD OF THE TABLE</text>
+          </g>
+          <g class="target-marker target-kids">
+            <text x="0" y="0" class="target-label">THE KIDS' TABLE</text>
+          </g>
+
+          <g class="position-marker">
+            <line x1="0" y1="0" x2="0" y2="-38" class="marker-pole" stroke-width="2"/>
+            <path d="M0,-38 L22,-31 L0,-24 Z" class="marker-flag"/>
+            <circle cx="0" cy="2" r="6" fill="#0B1F3D"/>
+          </g>
+        </svg>
+
+        <div class="toggle-copy">
+          <p class="toggle-copy-bad">2008: the city faced bankruptcy. Teamsters Local 14, led by Larry Griffith, worked directly with the city to keep operations running and NLV solvent. During COVID, our members were declared "essential" and kept every truck, crew, and yard moving with no added pay or benefits.</p>
+          <p class="toggle-copy-good">Today the city's finances are strong. The city council voted down our contract before the pandemic even started, and the most recent raise came out to 2.1% on paper — but after adjustments, only 1% actually reached members' paychecks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stat-card">
+      <span class="stat-number" data-count="590">0</span>
+      <span class="stat-label">Local 14 members in North Las Vegas</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number" data-count="2008" data-format="year">0</span>
+      <span class="stat-label">The year Teamsters helped keep NLV out of bankruptcy</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number" data-count="2.1" data-suffix="%">0</span>
+      <span class="stat-label">Last year's headline raise</span>
+    </div>
+    <div class="stat-card stat-card--flag">
+      <span class="stat-number" data-count="1" data-suffix="%">0</span>
+      <span class="stat-label">What actually landed as real pay increase</span>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="timeline">
+    <div class="section-head">
+      <h2>Nothing in this city moves without a Teamster making it happen.</h2>
+      <p class="section-note">A short history of showing up.</p>
+    </div>
+    <ol class="timeline">
+      <li class="timeline-item">
+        <span class="timeline-year">2008</span>
+        <div class="timeline-body">
+          <h3>NLV faces bankruptcy</h3>
+          <p>Local 14, led by Larry Griffith, worked with the city to keep it solvent and operating rather than watch it collapse.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-year">2020</span>
+        <div class="timeline-body">
+          <h3>Essential — and unpaid for it</h3>
+          <p>NLV workers were officially deemed essential during the pandemic. The city council voted down the contract right before COVID hit. No raise. No added benefits. The trucks still ran.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-year">Last year</span>
+        <div class="timeline-body">
+          <h3>A raise in name only</h3>
+          <p>Members were told they'd received a 2.1% increase. Once the dust settled, only 1% actually showed up as real pay.</p>
+        </div>
+      </li>
+      <li class="timeline-item timeline-item--now">
+        <span class="timeline-year">Now</span>
+        <div class="timeline-body">
+          <h3>The city is doing well. We're still waiting.</h3>
+          <p>North Las Vegas is in a strong financial position. Members are still waiting on a fair contract that reflects what the city actually asks of them.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- VOICES / TESTIMONIALS -->
+  <section class="voices-section" id="voices">
+    <div class="section-head">
+      <h2>Hear it from the people keeping NLV running.</h2>
+      <p class="section-note">Member stories from the yards, the routes, and the crews.</p>
+    </div>
+    <div class="voices-grid">
+      <article class="voice-card">
+        <button class="voice-video" data-video-placeholder aria-label="Play member testimonial">
+          <span class="voice-play">▶</span>
+        </button>
+        <h3 class="voice-name">Member name</h3>
+        <p class="voice-role">Role / department</p>
+        <p class="voice-quote">"Short pull-quote from the testimonial goes here once video is uploaded."</p>
+      </article>
+      <article class="voice-card">
+        <button class="voice-video" data-video-placeholder aria-label="Play member testimonial">
+          <span class="voice-play">▶</span>
+        </button>
+        <h3 class="voice-name">Member name</h3>
+        <p class="voice-role">Role / department</p>
+        <p class="voice-quote">"Short pull-quote from the testimonial goes here once video is uploaded."</p>
+      </article>
+      <article class="voice-card">
+        <button class="voice-video" data-video-placeholder aria-label="Play member testimonial">
+          <span class="voice-play">▶</span>
+        </button>
+        <h3 class="voice-name">Member name</h3>
+        <p class="voice-role">Role / department</p>
+        <p class="voice-quote">"Short pull-quote from the testimonial goes here once video is uploaded."</p>
+      </article>
+    </div>
+    <p class="voices-note">Video placeholders — swap in real member testimonials and photos when ready.</p>
+  </section>
+
+  <!-- MAYOR / ACCOUNTABILITY -->
+  <section class="accountability-section">
+    <div class="accountability-card">
+      <p class="accountability-kicker">Who can fix this</p>
+      <h2>Mayor Scott Black</h2>
+      <p class="accountability-body">Teamsters Local 14 endorsed Scott Black, who finished in the top two of the primary. As mayor, he's in a position to get a fair contract for the 590 members who keep North Las Vegas running. An endorsement was a bet on follow-through — this contract is where that gets decided.</p>
+    </div>
+  </section>
+
+  <!-- ACTION -->
+  <section class="action-section" id="action">
+    <div class="section-head section-head--light">
+      <h2>Where's our raise? Where's the fair contract?</h2>
+      <p class="section-note section-note--light">We're not asking for a favor. We're asking the city to pay what the work is worth.</p>
+    </div>
+    <div class="action-grid">
+      <div class="action-card">
+        <h3>Contact the City Council</h3>
+        <p>Tell the North Las Vegas City Council it's time to settle a fair contract for the members who kept this city running through 2008 and through the pandemic.</p>
+        <a href="#" class="btn btn-primary">Contact council</a>
+      </div>
+      <div class="action-card">
+        <h3>Share your story</h3>
+        <p>Are you a Local 14 member in North Las Vegas? Share what a fair contract would mean for you and your family.</p>
+        <a href="#" class="btn btn-ghost">Submit your story</a>
+      </div>
+      <div class="action-card">
+        <h3>Spread the word</h3>
+        <p>Help this reach every member, every household, and every council inbox in North Las Vegas.</p>
+        <a href="#" class="btn btn-ghost">Share this site</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Paid for by Teamsters Local 14 — North Las Vegas Unit. 590 members strong.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
